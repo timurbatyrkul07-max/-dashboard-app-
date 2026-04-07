@@ -1,0 +1,9 @@
+services:
+    backend:
+      build:
+        context: ./backend
+        dockerfile: Dockerfile
+      container_name: dashboard-backend
+      ports:
+        - "3001:3001"
+      restart: unless-stopped
